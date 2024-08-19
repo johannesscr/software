@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<main>
+    <p>
+        The year is {{fmtDateYMD .MyDate}}
+        Take the input and pipeline (similar to unix) to the next function.
+        The year is {{.MyDate | fmtDateYMD}}
+    </p>
+</main>
+</body>
+</html>

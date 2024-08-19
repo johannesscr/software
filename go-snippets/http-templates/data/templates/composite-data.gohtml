@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+</head>
+<body>
+<div>
+    <h4>Entire Struct</h4>
+    <div>{{.}}</div>
+
+    <h5>Range over the slice</h5>
+    <ul>
+        {{range .Slice}}
+            <li>{{.}}</li>
+        {{end}}
+    </ul>
+
+    <h5>Range over the map</h5>
+    <ul>
+        {{range $key, $val := .Map}}
+        <li>{{$key}} has {{$val}}</li>
+        {{end}}
+    </ul>
+</div>
+</body>
+</html>
