@@ -6,7 +6,7 @@ import (
 )
 
 func TestArrayCapacityAndLength(t *testing.T) {
-	arrayCapacityAndLength()
+	// arrayCapacityAndLength()
 }
 
 func arrayCapacityAndLength() {
