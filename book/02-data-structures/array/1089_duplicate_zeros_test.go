@@ -1,7 +1,6 @@
 package array
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -67,7 +66,7 @@ func TestDuplicateZeros(t *testing.T) {
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
 			duplicateZeros(test.arr)
-			fmt.Println(test.arr)
+			// fmt.Println(test.arr)
 		})
 	}
 }

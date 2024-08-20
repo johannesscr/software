@@ -1,7 +1,6 @@
 package array
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -102,7 +101,7 @@ func TestMerge(t *testing.T) {
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
 			mergeII(test.nums1, test.m, test.nums2, test.n)
-			fmt.Println(test.nums1)
+			// fmt.Println(test.nums1)
 		})
 	}
 }

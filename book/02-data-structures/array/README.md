@@ -54,7 +54,23 @@ provide multiple types such as an array `[5]interface{}` and slices
 > [27 Remove Element](./27_remove_element_test.go) and 
 > [26 Remove Duplicates from Sorted Array](./26_remove_duplicates_from_sorted_array_test.go)
 
-**Search**
-
-
 **In-Place Operations**
+
+### Search
+
+> Finally, we're going to look at the most important operation of all. More 
+> often than not, it comes down to the speed of searching for an element in a 
+> data structure that helps programmers make design choices for their codebases.
+
+#### Linear Search
+
+If the index of an element is known, then look-up is a constant time operation.
+We go to the index and check if the element is there. If we do not know the
+index of an element, then we need to check every element in the array until we
+find the element we are looking for and return the index, or we reach the end
+of the array.
+
+This is _linear search_ and has an `O(N)` time complexity.
+
+> Examples [1346 Check if N and its double exists](./1346_check_if_n_and_its_double_exist_test.go) 
+> and [941 Valid Mountain Array](./941_valid_mountain_array_test.go)
